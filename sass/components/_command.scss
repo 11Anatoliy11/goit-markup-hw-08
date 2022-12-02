@@ -1,0 +1,46 @@
+.command {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 94px 0;
+  letter-spacing: 0.03em;
+  background-color: $additional-background-color;
+
+  &__list {
+    justify-content: space-between;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    width: 270px;
+    margin: 0;
+    flex-direction: column;
+    align-content: center;
+    display: flex;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: $white;
+  }
+
+  &__name {
+    padding: 30px 0;
+  }
+
+  &__user {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+  &__specialty {
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}

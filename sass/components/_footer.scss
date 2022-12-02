@@ -1,0 +1,104 @@
+.footer {
+  padding: 60px 0;
+  background-color: $services;
+
+  &__block {
+    display: flex;
+    align-items: baseline;
+  }
+    &__logo {
+      display: flex;
+      flex-direction: column;
+    }   
+
+  .logo__text {
+    color: $white;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      margin-top: 20px;
+      margin-bottom: 9px;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  &__messenger {
+    justify-content: flex-start;
+    padding: 0;
+    margin-left: 70px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    padding: 0;
+    align-items: center;
+    color: $white;
+  }
+
+    &__email {
+      margin-left: auto;
+    }
+
+    .email {
+      &__item {
+        display: flex;
+      }
+
+      &__form input {
+        height: 50px;
+        width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
+        padding-left: 16px;
+        border-radius: 4px;
+        color: $gray;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        background-color: $services;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus-visible {
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          outline: none;  
+        }
+
+        &:hover,
+        &:focus {
+          border-color: $accent-color;
+        }
+      }
+
+      &__icon {
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        fill: $white;
+      }
+
+      &__button {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        margin: auto;
+        text-align: left;
+        padding-left: 28px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color: $white;
+        background-color: $accent-color;
+      }
+    }
+}

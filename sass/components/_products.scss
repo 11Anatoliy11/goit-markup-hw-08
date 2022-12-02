@@ -1,0 +1,30 @@
+.products {
+  margin: 0;
+  padding-bottom: 94px;
+
+  &__list {
+    justify-content: space-between;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__images {
+    width: 370px;
+    position: relative;
+  }
+
+  &__caption {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 76%;
+    color: $gray;
+    content: "";
+    background: rgba(47, 48, 58, 0.8);
+  }
+  
+}
