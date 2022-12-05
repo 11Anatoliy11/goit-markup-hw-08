@@ -12,11 +12,20 @@
 }
 
 .connection {
+  flex-direction: column-reverse;
   display: flex;
   padding: 0;
   margin: 0;
   margin-left: auto;
-  gap: 30px;
+  gap: 0;
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+  }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 30px; 
+  }
 
   &--inverse {
     flex-direction: column;
@@ -26,19 +35,25 @@
   }
 
   &__item {
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-bottom: 0;    
+    }
+
     .connection__link {
       align-items: center;
       display: flex;
-      padding-top: 32px;
-      padding-bottom: 28px;
-      margin-top: 0;
-      margin-bottom: 0;
-      line-height: 1.17;
+      padding: 0;
+      font-size: 34px;
+      line-height: 1.02;
       letter-spacing: 0.02em;
       text-decoration: none;
       fill: $primari-text-color;
       color: $primari-text-color;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
       &:hover,
       &:focus {
@@ -46,16 +61,29 @@
         color: $accent-color;
       }
 
+      @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.17;
+    }
+
+
+      @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 28px;
+    }
+
       &--inverse {
         padding: 0;
         margin: 0;
         font-weight: 400;
+        font-size: 14px;        
         font-style: normal;
         text-decoration: none;
         color: $grays;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
+         &:hover,
         &:focus {
           color: $accent-color;
         }
@@ -63,7 +91,12 @@
     }
 
     .connection__icon {
+      display: none;
       margin-right: 10px;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+    }
     }
     
     &--inverse {
@@ -71,22 +104,11 @@
       margin: 0;
       margin-bottom: 9px;
 
-    :last-child {
+    &:last-child {
       margin-bottom: 0;
       }
     }
   }
-}
-
-.section__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: $title-text-color;
 }
 
 .messenger {
@@ -95,21 +117,24 @@
   gap: 10px;
   padding: 0;
 
+
+
   &--inverse {
     padding: 0;
     gap: 10px;
   }
 
   &__link {
-    height: 44px;
-    width: 44px;
     justify-content: center;
     align-items: center;
     display: flex;
+    text-decoration: none;
+    height: 44px;
+    width: 44px;
     border-radius: 50%;
     color: $border;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {

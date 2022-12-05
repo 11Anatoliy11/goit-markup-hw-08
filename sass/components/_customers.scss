@@ -1,15 +1,42 @@
 .customers {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+}
+
+  &__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+}
+}
 
   &__list {
-    justify-content: space-between;
-    display: flex;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      display: flex;
+  }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   &__link {
     color: $border;
-    width: 170px;
+    width: 210px;
     height: 92px;
     justify-content: center;
     align-items: center;
@@ -22,7 +49,14 @@
     &:focus {
       border-color: $accent-color;
       color: $accent-color;
-    }     
+    }   
+    
+    @media screen and (min-width: 768px) {
+      width: 226px;
+  }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__icon {
