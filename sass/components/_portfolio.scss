@@ -7,8 +7,12 @@
             gap: 8px;
             margin-bottom: 50px;
             padding: 0;
-            justify-content: center;
+            flex-wrap: wrap;
             display: flex;
+
+            @media screen and (min-width: 768px) {
+                justify-content: center;
+            }
         }
 
         &__button {
@@ -41,15 +45,22 @@
     .work {
         &__list {
             padding: 0;
-            margin: -15px;
             display: flex;
             flex-wrap: wrap;
+            gap: 30px;
         }
 
         &__item {
-            width: 370px;
-            margin: 15px;
+            max-width: 450px;
             border: 1px solid $gray;
+
+            @media screen and (min-width: 768px) {
+                max-width: 354px;
+            }    
+            
+            @media screen and (min-width: 1200px) {
+                max-width: 370px;
+            }  
         }
 
         &__link {
@@ -74,13 +85,11 @@
             overflow: hidden;
             position: relative;
         }
-        &__images {
-            display: block;
-        }
 
         &__overflow {
             position: absolute;
             width: 100%;
+            height: 100%;
             top: 0;
             left: 0;
             padding: 63px 24px;

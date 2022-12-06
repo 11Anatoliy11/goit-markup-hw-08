@@ -74,6 +74,7 @@ header {
     }
 
     &__container {
+        z-index: 2;
         display: none;
         position: absolute;
         top: 0%;
@@ -138,6 +139,34 @@ header {
         }
     }
 
+    .nav__connection {
+        align-items: flex-start;
+        flex-direction: column;
+        display: flex;
+        padding: 0;
+        margin-bottom: 64px;
+
+        &--link {
+            margin-bottom: 32px;
+            font-size: 34px;
+            line-height: 1.02;
+            letter-spacing: 0.02em;
+            color: $accent-color;
+
+            &:last-child {
+                margin-bottom: 0;
+                font-size: 24px;
+                line-height: 1.17;
+                color: currentColor;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }        
+    }
+
+
     .nav__messenger {
         gap: 10px;
         display: flex;
@@ -146,8 +175,8 @@ header {
         }
 
         &--link {
+            color: $accent-color;
             border-left: 1px solid rgba(33, 33, 33, 0.2);
-
             padding-left: 10px;
             text-decoration: none;
             

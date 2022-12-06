@@ -80,13 +80,16 @@
   }
 
     &__email {
+      width: 100%;
       margin: 0;
 
       @media screen and (min-width: 768px) {
+        width: auto;        
         margin: auto;
       }
 
       @media screen and (min-width: 1200px) {
+  
         margin: 0;
         margin-left: auto;  
       }
@@ -94,18 +97,17 @@
 
     .email {
       &__item {
-        flex-direction: column;
         align-items: center;
-        display: flex;
+
 
         @media screen and (min-width: 1200px) {
-        flex-direction: row;
-        align-items: center;  
+        display: flex;
         }
       }
 
       &__form input {
         height: 50px;
+        max-width: 450px;
         width: 100%;
         margin-bottom: 20px;
         margin-right: auto;

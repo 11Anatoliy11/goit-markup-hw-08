@@ -33,13 +33,11 @@
              class="logo">
             <span class="logo__link">Web</span>Studio
           </a>
-
           <button type="button"
                   class="nav__button is-open"
                   aria-expanded="false"
                   aria-controls="nav__container"
                   data-menu-button>
-
             <svg class="nav__icon"
                  width="40px"
                  height="40px"
@@ -49,9 +47,7 @@
               <use class="nav__menu"
                    href="./images/symbol-defs.svg#icon-menu"></use>
             </svg>
-
           </button>
-
           <div class="nav__container"
                id="nav__container"
                data-menu>
@@ -72,7 +68,16 @@
                 </a>
               </li>
             </ul>
-
+            <div class="nav__connection">
+              <a class="nav__connection--link"
+                 href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+              <a class="nav__connection--link"
+                 href="mailto://info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </div>
             <ul class="connection">
               <li class="connection__item">
                 <a class="connection__link"
@@ -204,22 +209,37 @@
         <h2 class="products__title">Чим ми займаємося</h2>
         <ul class="products__list">
           <li class="products__images">
-            <img src="images/img1.jpg"
-                 alt="picture">
+            <picture>
+              <img srcset="images/products2/img1.jpg 1x,
+              images/products2/img1_2x.jpg 2x"
+                   src="images/products2/img1.jpg"
+                   alt="image"
+                   loading="lazy">
+            </picture>
             <p class="products__caption">
               ДЕСКТОПНІ ДОДАТКИ
             </p>
           </li>
           <li class="products__images">
-            <img src="images/img2.jpg"
-                 alt="picture">
+            <picture>
+              <img srcset="images/products2/img2.jpg 1x,
+              images/products2/img2_2x.jpg 2x"
+                   src="images/products2/img2.jpg"
+                   alt="image"
+                   loading="lazy">
+            </picture>
             <p class="products__caption">
               МОБІЛЬНІ ДОДАТКИ
             </p>
           </li>
           <li class="products__images">
-            <img src="images/img3.jpg"
-                 alt="picture">
+            <picture>
+              <img srcset="images/products2/img3.jpg 1x,
+              images/products2/img3_2x.jpg 2x"
+                   src="images/products2/img3.jpg"
+                   alt="image"
+                   loading="lazy">
+            </picture>
             <p class="products__caption">
               ДИЗАЙНЕРСЬКІ РІШЕННЯ
             </p>
@@ -233,34 +253,18 @@
         <h2 class="command__title">Наша команда</h2>
         <ul class="command__list">
           <li class="command__item">
-            <!-- <img src="images/img_user1.jpg"
-                 alt="user photo"> -->
-
-                 <!-- <img src="images/use/use1/user 1 480.jpg/id/270/354/450" 
-                 srcset="images/use/use1/user 1 480.jpg/id/270/354/450 1x, 
-                 images/use/use1/user 1 480.jpg/id/540/708/900 2x" 
-                 alt="user photo" 
-                 width="100%" > -->
-
             <picture>
-            <source srcset="images/use/use1/user 1 480.jpg 1x,
-            images/use/use1/user 1 480 2x.jpg 2x"
-            media="(min-width:1200px)" type="image/jpeg">
-            <source srcset="images/use/use1/user 1 1200.jpg 1x,
-            images/use/use1/user 1 1200 2x.jpg 2x"
-            media="(min-width: 768px)" type="image/jpeg">
-            <source srcset="images/use/use1/user 1 768.jpg 1x,
-            images/use/use1/user 1 480 2x.jpg 2x"
-            media="(max-width:480px)" type="image/jpeg">
-            <img
-            src="images/use/use1/user 1 480.jpg"
-            alt="Фронтенд разработчик"
-            width="100%"
-            class="team__img"
-          />
-          </picture>
-
-
+              <source media="(min-width: 1200px)"
+                      srcset="images/use/user_1_1200.jpg 1x,
+              images/use/user_1_1200_2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="images/use/user_1_768.jpg 1x,
+              images/use/user_1_768_2x.jpg 2x">
+              <img srcset="images/use/user_1_480.jpg 1x,
+              images/use/user_1_480_2x.jpg 2x"
+                   src="images/use/user_1_480.jpg"
+                   alt="image">
+            </picture>
             <div class="command__name">
               <h3 class="command__user">Ігор Дем'яненко</h3>
               <p lang="en"
@@ -307,8 +311,18 @@
             </div>
           </li>
           <li class="command__item">
-            <img src="images/img_user2.jpg"
-                 alt="user photo">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="images/use/user_2_1200.jpg 1x,
+              images/use/user_2_1200_2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="images/use/user_2_768.jpg 1x,
+              images/use/user_2_768_2x.jpg 2x">
+              <img srcset="images/use/user_2_480.jpg 1x,
+              images/use/user_2_480_2x.jpg 2x"
+                   src="images/use/user_2_480.jpg"
+                   alt="image">
+            </picture>
             <div class="command__name">
               <h3 class="command__user">Ольга Рєпіна</h3>
               <p lang="en"
@@ -356,8 +370,18 @@
             </div>
           </li>
           <li class="command__item">
-            <img src="images/img_user3.jpg"
-                 alt="user photo">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="images/use/user_3_1200.jpg 1x,
+              images/use/user_3_1200_2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="images/use/user_3_768.jpg 1x,
+              images/use/user_3_768_2x.jpg 2x">
+              <img srcset="images/use/user_3_480.jpg 1x,
+              images/use/user_3_480_2x.jpg 2x"
+                   src="images/use/user_3_480.jpg"
+                   alt="image">
+            </picture>
             <div class="command__name">
               <h3 class="command__user">Микола Тарасов</h3>
               <p lang="en"
@@ -405,8 +429,18 @@
             </div>
           </li>
           <li class="command__item">
-            <img src="images/img_user4.jpg"
-                 alt="user photo">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="images/use/user_4_1200.jpg 1x,
+              images/use/user_4_1200_2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="images/use/user_4_768.jpg 1x,
+              images/use/user_4_768_2x.jpg 2x">
+              <img srcset="images/use/user_4_480.jpg 1x,
+              images/use/user_4_480_2x.jpg 2x"
+                   src="images/use/user_4_480.jpg"
+                   alt="image">
+            </picture>
             <div class="command__name">
               <h3 class="command__user">Михайло Єрмаков</h3>
               <p lang="en"
@@ -591,26 +625,24 @@
         </div>
         <div class="footer__email">
           <p class="footer__text">ПІДПИШИТЬСЯ НА РОЗСИЛКУ</p>
-          <div class="">
-            <form action="form"
-                  class="email__item">
-              <div class="email__form">
-                <label for="email"></label>
-                <input type="email"
-                       name="mail"
-                       id="email"
-                       placeholder="E-mail">
-              </div>
-              <button type="submit"
-                      class="email__button">
-                Підписатися
-                <svg class="email__icon">
-                  <use href="./images/symbol-defs.svg#icon-icon-send">
-                  </use>
-                </svg>
-              </button>
-            </form>
-          </div>
+          <form action="form"
+                class="email__item">
+            <div class="email__form">
+              <label for="email"></label>
+              <input type="email"
+                     name="mail"
+                     id="email"
+                     placeholder="E-mail">
+            </div>
+            <button type="submit"
+                    class="email__button">
+              Підписатися
+              <svg class="email__icon">
+                <use href="./images/symbol-defs.svg#icon-icon-send">
+                </use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </div>
