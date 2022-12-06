@@ -646,7 +646,7 @@ header {
 @media screen and (min-width: 480px) {
   .footer .email__form input {
     width: 450px;
-    margin-right: 12px;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -817,12 +817,12 @@ header {
   display: flex;
   font-weight: 400;
   font-size: 12px;
-  height: 1.17;
+  line-height: 1.17;
 }
 @media screen and (min-width: 1200px) {
   .backdrop .modal .form .checkbox__label {
     font-size: 14px;
-    height: 1.71;
+    line-height: 1.71;
   }
 }
 .backdrop .modal .form .checkbox__text {
@@ -983,7 +983,7 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .work__wrapper {
-  padding: 20px 0 20px 24px;
+  padding: 20px 24px;
 }
 .portfolio .work__title {
   margin-bottom: 4px;
@@ -1037,7 +1037,6 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 img {
