@@ -2,50 +2,50 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   font-family: "Raleway", cursive;
   text-decoration: none;
   color: $black;
 
   @media screen and (min-width: 1200px) {
-  font-size: 26px;
-}
+    font-size: 26px;
+  }
 
   &__link {
     color: $accent-color;
   }
 }
 
-
 .connection {
   display: none;
 
   @media screen and (min-width: 768px) {
-      flex-direction: column;
-      display: flex;
-      padding: 0;
-      margin: 0;
-      margin-left: auto;
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
   }
 
-    @media screen and (min-width: 1200px) {
-      flex-direction: row;
-      gap: 30px; 
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
   }
 
   &--inverse {
+    display: block;
     flex-direction: column;
     padding: 0;
     margin: 0;
+    gap: 0;
   }
 
   &__item {
     margin-bottom: 10px;
 
     &:last-child {
-      margin-bottom: 0;    
+      margin-bottom: 0;
     }
-
-
 
     .connection__link {
       align-items: center;
@@ -57,9 +57,8 @@
       text-decoration: none;
       fill: $primari-text-color;
       color: $primari-text-color;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
       &:focus {
@@ -67,28 +66,22 @@
         color: $accent-color;
       }
 
-      @media screen and (min-width: 768px) {
-        // margin-bottom: 10px;
-
-    }
-
-
       @media screen and (min-width: 1200px) {
         padding-top: 32px;
         padding-bottom: 28px;
-    }
+      }
 
       &--inverse {
         padding: 0;
         margin: 0;
         font-weight: 400;
-        font-size: 14px;        
+        font-size: 14px;
         font-style: normal;
         text-decoration: none;
         color: $grays;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-         &:hover,
+        &:hover,
         &:focus {
           color: $accent-color;
         }
@@ -101,16 +94,16 @@
 
       @media screen and (min-width: 768px) {
         display: block;
+      }
     }
-    }
-    
+
     &--inverse {
       padding: 0;
       margin: 0;
       margin-bottom: 9px;
 
-    &:last-child {
-      margin-bottom: 0;
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
@@ -121,8 +114,6 @@
   display: flex;
   gap: 10px;
   padding: 0;
-
-
 
   &--inverse {
     padding: 0;
@@ -138,8 +129,9 @@
     width: 44px;
     border-radius: 50%;
     color: $border;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {

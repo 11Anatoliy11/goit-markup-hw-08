@@ -1,33 +1,33 @@
 body {
-    margin: 0 auto;
-    max-width: 1600px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $primari-text-color;
-    background-color: $white;
+  margin: 0 auto;
+  max-width: 1600px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primari-text-color;
+  background-color: $white;
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
