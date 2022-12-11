@@ -7,8 +7,23 @@
   
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
-  
+
+ 
     function toggleModal() {
       refs.modal.classList.toggle("is-hidden");
+      if (refs.modal.classList.contains("is-hidden")){
+         document.body.style.overflowY=null;
+      }
+      else{
+        document.body.style.overflowY="hidden";
+      }
+
+      // if (document.body.style.overflowY){
+      //   document.body.style.overflowY=null;
+      // }
+      // else{
+      //   document.body.style.overflowY="hidden";
+      // }
+      
     }
   })();

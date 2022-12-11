@@ -13,16 +13,22 @@
     margin: 0;
     padding: 0;
 
+    :last-child {
+      margin-bottom: 0;
+    }
+
     @media screen and (min-width: 768px) {
-      justify-content: space-between;
+      gap: 30px;
       flex-wrap: wrap;
       display: flex;
     }
   }
 
   &__item {
+    margin-bottom: 30px;
     max-width: 450px;
     @media screen and (min-width: 768px) {
+      margin-bottom: 0;
       width: 354px;
     }
     @media screen and (min-width: 1200px) {

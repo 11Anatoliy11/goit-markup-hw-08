@@ -29,84 +29,65 @@
               <span class="logo__link">Web</span>Studio
             </a>
             <button
-              type="button"
-              class="nav__button is-open"
-              aria-expanded="false"
-              aria-controls="nav__container"
-              data-menu-button
+            type="button"
+            class="nav__button is-open"
+            aria-expanded="false"
+            aria-controls="nav__container"
+            data-menu-button
             >
-              <svg
-                class="nav__icon"
-                width="40px"
-                height="40px"
-                aria-label="Перемикач мобільного меню"
-              >
-                <use
-                  class="nav__close"
-                  href="./images/symbol-defs.svg#icon-close-black">
-                </use>
-                <use
-                  class="nav__menu"
-                  href="./images/symbol-defs.svg#icon-menu">
-                </use>
-              </svg>
+            <svg
+              class="nav__icon"
+              width="40px"
+              height="40px"
+              aria-label="Перемикач мобільного меню">
+              <use
+                class="nav__close"
+                href="./images/symbol-defs.svg#icon-close-black">
+              </use>
+              <use
+                class="nav__menu"
+                href="./images/symbol-defs.svg#icon-menu">
+              </use>
+            </svg>
             </button>
-            <div class="nav__container" id="nav__container" data-menu>
-              <ul class="nav__pages">
-                <li class="nav__item">
-                  <a href="./index.html" class="nav__link"> Студія </a>
-                </li>
-                <li class="nav__item current">
-                  <a href="/" class="nav__link current"> Портфоліо </a>
-                </li>
-                <li class="nav__item">
-                  <a href="/" class="nav__link"> Контакти </a>
-                </li>
-              </ul>
-              <div class="nav__connection">
-                <a class="nav__connection--link" href="tel:+380961111111">
-                  +38 096 111 11 11
+            <ul class="nav__pages">
+              <li class="nav__item">
+                <a href="./index.html"
+                  class="nav__link"> Студія
                 </a>
-                <a
-                  class="nav__connection--link"
-                  href="mailto://info@devstudio.com"
-                >
-                  info@devstudio.com
+              </li>
+              <li class="nav__item current">
+                <a href="./portfolio.html"
+                  class="nav__link current"> Портфоліо
                 </a>
-              </div>
-              <ul class="connection">
-                <li class="connection__item">
-                  <a
-                    class="connection__link"
-                    href="mailto://info@devstudio.com"
-                  >
-                    <svg class="connection__icon" width="16px" height="12px">
-                      <use 
-                        href="./images/symbol-defs.svg#icon-envelope">
-                      </use>
-                    </svg>
-                    info@devstudio.com
-                  </a>
-                </li>
-                <li class="connection__item">
-                  <a class="connection__link" href="tel:+380961111111">
-                    <svg class="connection__icon" width="10px" height="16px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-smartphone">
-                      </use>
-                    </svg>
-                    +38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-              <div class="nav__messenger">
-                <a href="" class="nav__messenger--link"> Instagram </a>
-                <a href="" class="nav__messenger--link"> Twitter </a>
-                <a href="" class="nav__messenger--link"> Facebook </a>
-                <a href="" class="nav__messenger--link"> Linkedin </a>
-              </div>
-            </div>
+              </li>
+              <li class="nav__item">
+                <a href="/"
+                  class="nav__link"> Контакти
+                </a>
+              </li>
+            </ul>
           </nav>
+          <ul class="connection">
+            <li class="connection__item">
+              <a class="connection__link"
+                href="mailto://info@devstudio.com">
+                <svg class="connection__icon" width="16px" height="12px">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="connection__item">
+              <a class="connection__link"
+                href="tel:+380961111111">
+                <svg class="connection__icon" width="10px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul> 
         </div>
       </div>
     </header>
@@ -580,6 +561,39 @@
         </div>
       </div>
     </footer>
+
+<!-- nav-menu -->
+
+<div class="nav__container" id="nav__container" data-menu>
+  <ul class="nav__container--pages">
+    <li class="nav__container--item">
+      <a href="./index.html" class="nav__container--link"> Студія </a>
+    </li>
+    <li class="nav__container--item">
+      <a href="./portfolio.html" class="nav__container--link current"> Портфоліо </a>
+    </li>
+    <li class="nav__container--item">
+      <a href="/" class="nav__container--link"> Контакти </a>
+    </li>
+  </ul>
+  <div class="nav__connection">
+    <a class="nav__connection--link" href="tel:+380961111111">
+      +38 096 111 11 11
+    </a>
+    <a
+      class="nav__connection--link"
+      href="mailto://info@devstudio.com"
+    >
+      info@devstudio.com
+    </a>
+  </div>
+  <div class="nav__messenger">
+    <a href="" class="nav__messenger--link"> Instagram </a>
+    <a href="" class="nav__messenger--link"> Twitter </a>
+    <a href="" class="nav__messenger--link"> Facebook </a>
+    <a href="" class="nav__messenger--link"> Linkedin </a>
+  </div>
+</div>
 
     <script src="./js/mobile-menu.js"></script>
   </body>

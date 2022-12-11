@@ -1,4 +1,5 @@
 .logo {
+  padding: 16px 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
@@ -6,6 +7,10 @@
   font-family: "Raleway", cursive;
   text-decoration: none;
   color: $black;
+
+  @media screen and (min-width: 768px) {
+    padding: unset;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 26px;
@@ -57,8 +62,7 @@
       text-decoration: none;
       fill: $primari-text-color;
       color: $primari-text-color;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
       &:focus {
@@ -133,8 +137,7 @@
     width: 44px;
     border-radius: 50%;
     color: $border;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
