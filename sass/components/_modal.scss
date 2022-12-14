@@ -16,8 +16,6 @@
     max-height: 609px;
     top: 50%;
     left: 50%;
-    align-items: flex-start;
-    display: flex;
     border-radius: 4px;
     transform: translate(-50%, -50%);
     background-color: $white;
@@ -26,6 +24,10 @@
 
       @media screen and (min-width: 480px) {
         width: 450px;
+      }
+      @media screen and (min-width: 900px) {
+        overflow-y: unset;
+        height: unset;
       }
 
       @media screen and (min-width: 1200px) {
